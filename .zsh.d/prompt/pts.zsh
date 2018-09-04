@@ -28,12 +28,12 @@ function zle-line-init zle-keymap-select {
 
     if [ -n "$SSH_CLIENT" ] || [ -n "$SSH_TTY" ]; then
         local LEFT0="%(?..%F{red}──> %?)"
-        local LEFT1="%F{green}╭─╴ %F{red}(ssh) %F{cyan}%n%f@%F{magenta}%m %f%(4~|%-1~//%2~|%3~)"
+        local LEFT1="%F{green}╭─╴ %F{red}(ssh) %F{magenta}%n%f🌸%F{cyan}%m %f%(4~|%-1~//%2~|%3~)"
         local LEFT2="%F{green}│  %f "
         local LEFT3="%F{green}╰─>%f "
     else
         local LEFT0="%(?..%F{red}──> %?)"
-        local LEFT1="%F{green}╭─╴ %F{cyan}%n%f@%F{magenta}%m %f%(4~|%-1~//%2~|%3~)"
+        local LEFT1="%F{green}╭─╴ %F{magenta}%n%f🌸%F{cyan}%m %f%(4~|%-1~//%2~|%3~)"
         local LEFT2="%F{green}│  %f "
         local LEFT3="%F{green}╰─>%f "
     fi
@@ -81,7 +81,7 @@ function zle-line-init zle-keymap-select {
 
 function zle-line-finish {
     local LINE0="%(?..%F{red}──> %?)$NEWLINE"
-    local LINE1="%F{green}╭─╴ %F{cyan}%n%f@%F{magenta}%m %f%(4~|%-1~//%2~|%3~)$NEWLINE"
+    local LINE1="%F{green}╭─╴ %F{magenta}%n%f🌸%F{cyan}%m %f%(4~|%-1~//%2~|%3~)$NEWLINE"
     local LINE2="%F{green}╰─> %f"
 
     PS1="$LINE0$LINE1$LINE2"
