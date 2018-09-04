@@ -68,5 +68,5 @@ source $ZDOTDIR/prompt/prompt.zsh
 ###---------------------------------------------------
 ## プラグイン 
 #-----------------------------------------------------
-source ./plugins/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
-source ./plugins/zsh-autosuggestions/zsh-autosuggestions.zsh
+source .zsh.d/plugins/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
+source .zsh.d/plugins/zsh-autosuggestions/zsh-autosuggestions.zsh
