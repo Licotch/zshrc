@@ -6,8 +6,8 @@ THIS_DIR=$(cd $(dirname $0);pwd)
 
 cd $THIS_DIR
 
-git module init
-git module update
+git submodule init
+git submodule update
 
 echo "start zshrc setup..."
 ln -snfv $THIS_DIR/.zshrc ~/
